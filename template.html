@@ -3,10 +3,10 @@
 
 		<link rel='stylesheet' href='css/bootstrap.css'>
 		<link rel="stylesheet" href="css/bootstrap-theme.css">
-
-		<script src='js/jquery-1.10.2.min.js'></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.roundabout.js"></script>	
+		<!--<script src='js/jquery-1.10.2.min.js'></script> -->
 		<script src='js/bootstrap.js'></script>
-
 
 	</head>
 
@@ -89,7 +89,31 @@
 
 			<div class="mainContent row">	
 					<div class="articleSection col-md-7 mainContentDesign">
-						<div class="carousel row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, tenetur, fugit illum eos laboriosam necessitatibus velit quae quia ad optio magni iure distinctio nihil nobis quibusdam vitae aliquam asperiores!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, tenetur, fugit illum eos laboriosam necessitatibus velit quae quia ad optio magni iure distinctio nihil nobis quibusdam vitae aliquam asperiores!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, tenetur, fugit illum eos laboriosam necessitatibus velit quae quia ad optio magni iure distinctio nihil nobis quibusdam vitae aliquam asperiores!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, tenetur, fugit illum eos laboriosam necessitatibus velit quae quia ad optio magni iure distinctio nihil nobis quibusdam vitae aliquam asperiores!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, tenetur, fugit illum eos laboriosam necessitatibus velit quae quia ad optio magni iure distinctio nihil nobis quibusdam vitae aliquam asperiores!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, tenetur, fugit illum eos laboriosam necessitatibus velit quae quia ad optio magni iure distinctio nihil nobis quibusdam vitae aliquam asperiores!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, tenetur, fugit illum eos laboriosam necessitatibus velit quae quia ad optio magni iure distinctio nihil nobis quibusdam vitae aliquam asperiores!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, tenetur, fugit illum eos laboriosam necessitatibus velit quae quia ad optio magni iure distinctio nihil nobis quibusdam vitae aliquam asperiores!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, tenetur, fugit illum eos laboriosam necessitatibus velit quae quia ad optio magni iure distinctio nihil nobis quibusdam vitae aliquam asperiores!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dignissimos, tenetur, fugit illum eos laboriosam necessitatibus velit quae quia ad optio magni iure distinctio nihil nobis quibusdam vitae aliquam asperiores!</div><!--end carousel -->
+						<div class="carousel row">
+							<div class="rotatorContainer">
+									<ul>
+									   <li><a href="#"><img src="img/11.png" alt="sample content"  height="200" width="260"></a></li>
+
+									   <li><a href="#"><img src="img/12.png" alt="sample content"  height="200" width="260"></a></li>
+
+									   <li><a href="#"><img src="img/13.png" alt="sample content"  height="200" width="260"></a></li>
+
+									   <li><a href="#"><img src="img/14.png" alt="sample content"  height="200" width="260"></a></li>
+
+									   <li><a href="#"><img src="img/15.png" alt="sample content"  height="200" width="260"></a></li>
+
+									</ul>
+									<a href="#" class="nextBtn"><img src="img/left.png" alt="next slide" width="40" height="40"></a>
+									<a href="#" class="prevBtn"><img src="img/right.png" alt="previous slide" width="40" height="40"></a>
+									<div class="slideSubtitle">
+										<h3>Chris Cornel</h3>
+										<p>The Audioslave frontman ditches hard rock in for Timbaland-produced electronic soul.</p>
+									</div>
+									<div class="playButton" onClick="alert('Thank you for clicking')">
+										<a href="#"><img src="img/play.png" alt="" width="50" height="50"></a>	
+									</div>
+								</div><!-- end rotatorContainer-->
+						</div><!--end carousel -->
 						<div class="musicSearch row"></div>
 						<div class="topAlbums row"></div>
 						<div class="topTracks row"></div>
@@ -391,6 +415,92 @@
 
 
 	</style>
+
+	<style>
+	/*carousel*/
+	.rotatorContainer {
+		margin:0;
+		width: 555px;
+		height: 230px;
+		position: absolute;
+	}
+
+   .roundabout-holder {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height:200px;
+      width: 360px;
+      margin: -30px 0 0 50px ;
+   }
+   .roundabout-moveable-item {
+      height: 160px;
+      width: 200px;
+      cursor: pointer;
+      background-color: #ccc;
+      border: 1px solid #999;
+   }
+   .roundabout-in-focus {
+      cursor: auto;
+   }
+
+   .nextBtn {
+   	z-index: 1000;
+   	position: absolute;
+   	top: 80px;
+   	left: -50px;
+   }
+
+   .prevBtn {
+   	z-index: 1000;
+   	position: absolute;
+   	top: 80px;
+   	right: -50px;
+   }
+
+   .slideSubtitle {
+   	position: absolute;
+   	background-color: none;
+   	top: 235px;
+   	left: 140px;
+   	width:220px;
+   	height: 120px;
+   	z-index: 1000;
+   }
+
+   	.slideSubtitle h3 {
+   		margin: 0 0 5px 0;
+   		padding: 0;
+   		font-size: 14px;
+   		color: #5e7eaf;
+   	}
+
+   	.slideSubtitle p {
+   		margin: 0;
+   		padding: 0;
+   		font-size: 12px;
+   		color: #444444;
+   	}
+
+   	.playButton {
+   		position: absolute;
+   		top: 70px;
+   		left: 230px;
+   		z-index: 1000;
+   	}
+</style>
+
+	<script>
+	   $(document).ready(function() {
+	      $('.rotatorContainer ul').roundabout({
+	         btnNext: ".nextBtn",
+	         btnPrev: ".prevBtn",
+	          autoplay: true,
+	         autoplayDuration: 5000,
+	         autoplayPauseOnHover: true
+	      });
+	   });
+	</script>
 	
 	<script>
 
