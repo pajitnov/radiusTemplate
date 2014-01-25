@@ -1,0 +1,68 @@
+
+<html>
+
+	<head>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.roundabout2.js"></script>
+	</head>
+
+	<body >
+		
+		<div class="contentRotator" screen_capture_injected="true" cz-shortcut-listen="true">
+			<ul class="roundabout-holder" style="padding: 0px; position: relative;">
+				<li class="roundabout-moveable-item roundabout-in-focus" style="position: absolute; left: 92px; top: 30px; width: 480px; height: 320px; opacity: 1; z-index: 280; font-size: 16px;"><span>Block 1</span></li>
+
+				<li class="roundabout-moveable-item" style="position: absolute; left: 429px; top: 63px; width: 480px; height: 320px; opacity: 0.79; z-index: 218; font-size: 14px;"><span>Block 2</span></li>
+
+				<li class="roundabout-moveable-item" style="position: absolute; left: 400px; top: 117px; width: 480px; height: 320px; opacity: 0.46; z-index: 117; font-size: 14px;"><span>Block 3</span></li>
+
+				<li class="roundabout-moveable-item" style="position: absolute; left: 45px; top: 117px; width: 480px; height: 320px; opacity: 0.46; z-index: 117; font-size: 14px;"><span>Block 4</span></li>
+
+				<li class="roundabout-moveable-item" style="position: absolute; left: -145px; top: 63px; width: 480px; height:320px; opacity: 0.79; z-index: 218; font-size: 14px;"><span>Block 5</span></li>
+			</ul>
+		</div>
+		
+
+		<style>
+
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0 auto;
+				width: 42em;
+				height: 24em;
+			}
+
+			li {
+				height: 20em;
+				width: 30em;
+				background-color: #ccc;
+				text-align: center;
+				cursor: pointer;
+			}
+
+			li.roundabout-in-focus {
+				cursor: default;
+			}
+
+			li span {
+				display: block;
+				padding-top: 6em;
+			}
+
+			#carbonads-container .carbonad {
+				margin: 0 auto;
+			}
+
+		</style>
+	
+		
+
+
+		<script>
+			$(document).ready(function() {
+				$('ul').roundabout();
+			});
+		</script>
+	</body>
+</html>
