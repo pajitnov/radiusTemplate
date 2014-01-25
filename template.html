@@ -2,6 +2,7 @@
 	<head>
 
 		<link rel='stylesheet' href='css/bootstrap.css'>
+		<link rel="stylesheet" href="css/bootstrap-theme.css">
 
 		<script src='js/jquery-1.10.2.min.js'></script>
 		<script src='js/bootstrap.js'></script>
@@ -10,7 +11,7 @@
 	</head>
 
 	<body>
-		<div class="container">
+		<div class="container row ">
 			<div class="topMenu topMenuGradient row">
 				<div class="btn-group  pull-right topMenuContainer">
 					<button class="topMenuBtn btn1 topMenuGradient">Sign In</button>
@@ -28,8 +29,8 @@
 			</div>
 			
 			<div class="row">
-				<div class="span6 pull-left"><span class="logo">Logo</span></div>
-				<div class="span4 pull-right">
+				<div class="col-md-6"><span class="logo">Logo</span></div>
+				<div class="col-md-6">
 					<form class="searchMod">
 						<input class="searchInput pull-left" type="text" name="search" value="What are you looking for?">
 			  			<input class="searchButton " type="submit" value="Find It">
@@ -43,7 +44,7 @@
 
 			<div class="row mainMenu">
 				<ul class="nav nav-tabs">
-										<li><a href="#" class="topMenuItem">Residential:</a></li>
+					<li><a href="#" class="topMenuItem">Residential:</a></li>
 					<li><a href="#" class="topMenuItem">TV</a></li>
 					<li><a href="#" class="topMenuItem">Internet</a></li>
 					<li><a href="#" class="topMenuItem">Phone</a></li>
@@ -57,14 +58,56 @@
 				</ul>
 			</div>
 
+			<div class="seconLevelMenu row">
+				<ul class="nav nav-pills col-md-6">
+					<li><a href="#" class="subMenuItem">Today</a></li>
+					<li><a href="#" class="subMenuItem">Watch</a></li>
+					<li><a href="#" class="subMenuItem">Surf</a></li>
+					<li><a href="#" class="subMenuItem">Play</a></li>
+					<li><a href="#" class="subMenuItem">Listen</a></li>
+					<li><a href="#" class="subMenuItem">Local</a></li>
+				</ul>
+
+				<ul class="nav nav-pills col-md-6">
+					<li class="toolsMenuDescription">Tools:</li>
+					<li><a href="#" class="toolsMenuItem">Webmail</a></li>
+					<li><a href="#" class="toolsMenuItem">Account</a></li>
+					<li><a href="#" class="toolsMenuItem">Billing</a></li>
+					<li><a href="#" class="toolsMenuItem">Order Services</a></li>
+				</ul>
+			</div>
+
+			<ul class="breadcrumb row">
+				<li>You are here:</li>
+				<li><a href="#">Residential</a><span class="divider">&raquo;</span></li>
+				<li><a href="#">Listen</a><span class="divider">&raquo;</span></li>
+				<li><a href="#">MyPlace</a><span class="divider">&raquo;</span></li>
+				<li><a href="#">Music</a><span class="divider">&raquo;</span></li>
+			</ul>
 
 
+			<div class="mainContent row">	
+					<div class="articleSection col-md-8">
+						<div class="carousel row"></div><!--end carousel -->
+						<div class="musicSearch row"></div>
+						<div class="topAlbums row"></div>
+						<div class="topTracks row"></div>
+					</div><!--end articleSection -->
 
+					<div class="bannerSection col-md-4">
+						<div class="banner banner1 col-md-2"></div><!--end banner1-->
+						<div class="banner banner2 col-md-2"></div><!--end banner1-->
+					</div><!--end bannerSection-->
+			</div><!--end mainContent-->
 
-
-
+			<div class="row footer">
+				
+			</div>
 
 		</div><!--end container -->
+
+
+
 	</body>
 
 	<style>
@@ -168,7 +211,20 @@
 			border-top-right-radius: 10px;
 			border-bottom-right-radius: 10px;
 		}
+		
 
+		.breadcrumb li {margin: 0 0 0 5px; color: #b9bbbc;}
+		.breadcrumb li a {color: #b9bbbc; margin: 0 5px 0 0;}
+		.breadcrumb li:before {	display: none;}
+
+/*main section*/
+		.mainContent {}
+		.articleSection {background-color: #fbd828;}
+		.bannerSection { background-color: #c26a5b;}
+
+
+/*remove after*/
+	.redBorder {border: 1px red solid;}
 
 
 	</style>
