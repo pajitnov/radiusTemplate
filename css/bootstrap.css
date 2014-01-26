@@ -4121,7 +4121,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  /* border-bottom: 1px solid #dddddd; */
 }
 
 .nav-tabs > li {
@@ -4146,8 +4146,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #555555;
   cursor: default;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-bottom-color: transparent;
+  /* border: 1px solid #dddddd; */
+  border-bottom-color: #e9f2f8;
 }
 
 .nav-tabs.nav-justified {
