@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item>
+		<artist>Rihana</artist>
+		<album>Good Girl Gone Bad: Reloaded</album>			
+		<image>img/1a.jpg</image>
+		<mp3>mp3/samplesound.mp3</mp3>
+		<mp3-name>Name of the mp3</mp3-name>
+		<description>This is a sample description</description>
+	</item>	
+	<item>
+		<artist>Miley Cyrus</artist>
+		<album>Breakout</album>	
+		<image>img/2a.jpg</image>
+		<mp3>mp3/samplesound.mp3</mp3>
+		<mp3-name>Name of the mp3</mp3-name>
+		<description>This is a sample description</description>
+	</item>	
+	<item>
+		<artist>Katy Perry</artist>
+		<album>Rockferry</album>	
+		<image>img/3a.jpg</image>
+		<mp3>mp3/samplesound.mp3</mp3>
+		<mp3-name>Name of the mp3</mp3-name>
+		<description>This is a sample description</description>
+	</item>	
+	<item>
+		<artist>Jonas Brothers</artist>
+		<album>A little bit longer</album>	
+		<image>img/4a.jpg</image>
+		<mp3>mp3/samplesound.mp3</mp3>
+		<mp3-name>Name of the mp3</mp3-name>
+		<description>This is a sample description</description>
+	</item>	
+	<item>
+		<artist>Katy Perry</artist>
+		<album>One of the Boys</album>	
+		<image>img/5a.jpg</image>
+		<mp3>mp3/samplesound.mp3</mp3>
+		<mp3-name>Name of the mp3</mp3-name>
+		<description>This is a sample description</description>
+	</item>	
+	<item>
+		<artist>Rihana</artist>
+		<album>Good Girl Gone Bad: Reloaded</album>	
+		<image>img/6a.jpg</image>
+		<mp3>mp3/samplesound.mp3</mp3>
+		<mp3-name>Name of the mp3</mp3-name>
+		<description>This is a sample description</description>
+	</item>						
+</items>

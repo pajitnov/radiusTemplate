@@ -31,8 +31,9 @@
 				<div class="col-md-6"><span class="logo">Logo</span></div>
 				<div class="col-md-6">
 					<form class="searchMod pull-right">
-						<input class="searchButton buttonGrey pull-right " type="submit" value="Find It">
-						<input class="searchInput pull-right" type="text" name="search" size="27" placeholder="&ensp;&ensp;What are you looking for?" onClick="this.placeholder = ' '">
+						<input class="searchInput pull-left" type="text" name="search" size="27" placeholder="&ensp;&ensp;What are you looking for?" onClick="this.placeholder = ' ' ">
+						<input class="searchButton buttonGrey pull-left " type="submit" value="Find It">
+						
 			  			<span class="help-block">
 						<div class="searchSettings pull-left ">
 							Search:
@@ -200,24 +201,222 @@
 						</div><!--end carousel -->
 
 						<div class="musicSearch row">
-							
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!
+							<label class="musicSearchLabel" for="musicSearch">Search Music:</label>
+								<input class="musicSearchInput" type="text" id="musicSearch" placeholder="" size="27">
 
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!
-
-
-
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ve</br> nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delec
-
-							tus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicin
-</br>
-							 elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vel nam cupiditate eos ducimus rem delectus qui reiciendis quibusdam culpa accusamus minima nihil quae deserunt vero dolores alias nostrum illum!
+								<div class="btn-group sortingStyles">
+									<button class="btn dropdown-toggle sortingStyle" data-toggle="dropdown">By Composer</button>
+									<button class="btn dropdown-toggle sortingStyleDropdown" data-toggle="dropdown">
+										<span class="caret"></span>
+									</button>	
+									<ul class="dropdown-menu">
+										<li><a href="#">Album</a></li>
+										<li><a href="#">Artist</a></li>
+										<li><a href="#">Track</a></li>
+									</ul>
+									<button class="sleekBlue">Go</button>
+								</div>				
 						</div>
-						<div class="topAlbums row"></div>
-						<div class="topTracks row"></div>
+
+						<style>
+							.musicSearch, .topAlbums, .albumsSorting, .albumsSortingHeader {
+								padding: 5px 0 5px 0;
+								border-bottom: dotted #b4b4b5 1px;
+								margin: 0 0 0 2px;
+
+							}
+
+							.musicSearchLabel {
+								font-size: 16px;
+								font-weight: 800;
+							}
+
+							.musicSearchInput {
+								-webkit-border-radius: 7px;
+								-moz-border-radius: 7px;
+								border-radius: 7px;								
+							}
+							.sortingStyles {
+								margin: 0 10px 0  0;
+							}
+
+							.sortingStyle {
+								margin: -2px 0px 0px 0;
+								border: 1px solid #d9d9d9;
+								background-color: white;
+								line-height: 14px;
+
+								-webkit-border-top-left-radius: 7px;
+								-webkit-border-bottom-left-radius: 7px;
+								-moz-border-radius-topleft: 7px;
+								-moz-border-radius-bottomleft: 7px;
+								border-top-left-radius: 7px;
+								border-bottom-left-radius: 7px;
+							}
+
+							.sortingStyleDropdown {
+								border: 1px solid #d9d9d9;
+								background-color:  ;
+								height: 27px ;
+								margin: -2px 0 0 -2px;
+
+								-webkit-border-top-right-radius: 7px;
+								-webkit-border-bottom-right-radius: 7px;
+								-moz-border-radius-topright: 7px;
+								-moz-border-radius-bottomright: 7px;
+								border-top-right-radius: 7px;
+								border-bottom-right-radius: 7px;
+							}
+
+							.sortingStyleDropdown span {
+								line-height: 14px;
+								margin-bottom: #055a95 !important ;
+							}
+
+							.sleekBlue { 
+								padding: 4px 15px 4px 15px;
+								margin: -2px 0 0 10px;
+								border: 0;
+								color: white;
+
+									-webkit-border-radius: 7px;
+									-moz-border-radius: 7px;
+									border-radius: 7px;
+
+								background: #39a4d5; /* Old browsers */
+								/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+								background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM5YTRkNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzNiOGZiZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU0JSIgc3RvcC1jb2xvcj0iIzA1NjE5ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNTYxOWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+								background: -moz-linear-gradient(top,  #39a4d5 0%, #3b8fbe 50%, #05619d 54%, #05619d 100%); /* FF3.6+ */
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#39a4d5), color-stop(50%,#3b8fbe), color-stop(54%,#05619d), color-stop(100%,#05619d)); /* Chrome,Safari4+ */
+								background: -webkit-linear-gradient(top,  #39a4d5 0%,#3b8fbe 50%,#05619d 54%,#05619d 100%); /* Chrome10+,Safari5.1+ */
+								background: -o-linear-gradient(top,  #39a4d5 0%,#3b8fbe 50%,#05619d 54%,#05619d 100%); /* Opera 11.10+ */
+								background: -ms-linear-gradient(top,  #39a4d5 0%,#3b8fbe 50%,#05619d 54%,#05619d 100%); /* IE10+ */
+								background: linear-gradient(to bottom,  #39a4d5 0%,#3b8fbe 50%,#05619d 54%,#05619d 100%); /* W3C */
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39a4d5', endColorstr='#05619d',GradientType=0 ); /* IE6-8 */
+
+							}
+
+
+						</style>
+
+						<div class="topAlbums row">
+							<div class="topAlbumsContainer">
+					
+								
+								<div class="topAlbums">
+									<h2 class="musicHeading">Top Albums</h2>		
+								</div>
+
+	<style>
+		.musicHeading {
+			font-size: 18px;
+			margin: 0px 0 5px 5px ;
+			color: #305c9c;
+			}
+
+	</style>
+								
+
+								<div class="albumsSorting  row">						
+									<div class="btn-group sortingStyles">
+										<button class="btn dropdown-toggle sortingStyle" data-toggle="dropdown">By Genre</button>
+										<button class="btn dropdown-toggle sortingStyleDropdown" data-toggle="dropdown">
+											<span class="caret"></span>
+										</button>	
+										<ul class="dropdown-menu">
+											<li><a href="#">Album</a></li>
+											<li><a href="#">Artist</a></li>
+											<li><a href="#">Track</a></li>
+										</ul>
+									</div>			
+								</div>
+
+		<style>
+			.albumsSorting { 
+				margin: 5px 0 5px 0 ;
+				}
+		</style>
+
+						
+
+
+								<div class="albumsSortingHeader row">
+									<div class="playHeading pull-left">Play</div>
+									<div class="AlbumHeading pull-left">Album</div>
+									<div class="ArtistHeading pull-left">Artist</div>
+									<div class="TrackHeading pull-left">Track</div>
+								</div>
+
+								<div class="albumContainer">
+									
+									<ul>
+										<li class="redBorder catalogElement">
+											<a class="playThisSong" href="#"><img src="img/p lay.png" alt="playButton"></a>
+											<span class="elementNumber">1</span>
+											<img class="thisAlbumTitle"src="img/a1.jpg" alt="AlbumTitle">
+											<div class="albumTitle">Good Girl Gone Bad</div>
+											<div class="artist">Rhiana</div>
+											<button class="btn sleekBlue">View</button>
+										</li>
+						<style>
+						.albumContainer ul {
+							padding: 0;
+						}
+						.catalogElement { 
+								list-style-type: none;
+							}
+						.playThisSong, .elementNumber, .thisAlbumTitle, .albumTitle, .artist {
+							float: left;
+						}
+
+						</style>
+										<li>
+											<a href="#"><img src="img/p lay.png" alt="playButton"></a>
+											<span class="elementNumber">1</span>
+											<img src="img/a1.jpg" alt="AlbumTitle">
+											<div class="albumTitle">Good Girl Gone Bad</div>
+											<div class="artist">Rhiana</div>
+											<button class="btn sleekBlue">View</button>
+										</li>
+
+										<li>
+											<a href="#"><img src="img/p lay.png" alt="playButton"></a>
+											<span class="elementNumber">1</span>
+											<img src="img/a1.jpg" alt="AlbumTitle">
+											<div class="albumTitle">Good Girl Gone Bad</div>
+											<div class="artist">Rhiana</div>
+											<button class="btn sleekBlue">View</button>
+										</li>
+
+									</ul>
+
+								
+								</div>
+				
+								<div class="albumNavFooter">
+									<button class="btn sleekGrey">|<</button>
+									<button class="btn sleekGrey">< Prev</button>
+
+									<div class="btn-group">
+										<button class="btn">1</button>
+										<button class="btn">2</button>
+										<button class="btn">3</button>
+										<button class="btn">4</button>
+										<button class="btn">5</button>
+									</div>
+
+									<button class="btn sleekGrey">Next ></button>
+									<button class="btn sleekGrey">>|</button>
+								</div>
+
+							</div><!-- end topAlbumsContainer-->
+						</div><!--end topAlbums-->
+
+
+						<div class="topTracks row">
+							
+						</div><!--end topTracks -->
+
 					</div><!--end articleSection -->
 
 					<div class="bannerSection col-md-5">

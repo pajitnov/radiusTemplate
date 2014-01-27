@@ -11,47 +11,113 @@
 
 	<body>
 		<div class="topAlbumsContainer">
-			
+			<div class="musicSearch">
+				<label class="musicSearchLabel" for="musicSearch">Search Music</label>
+				<input class="musicSearchInput" type="text" id="musicSearch" placeholder="">
 
+				<div class="btn-group">
+					<button class="btn dropdown-toggle" data-toggle="dropdown">By Composer</button>
+					<button class="btn dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+					</button>	
+					<ul class="dropdown-menu">
+						<li><a href="#">Album</a></li>
+						<li><a href="#">Artist</a></li>
+						<li><a href="#">Track</a></li>
+					</ul>
+					<button class="btn sleekBlue">Go</button>
+				</div>
+			</div>
+			
+			<div class="topAlbums">
+				<h2 class="musicHeading">Top Albums</h2>		
+			</div>
+
+			<div class="albumsSorting">
+				<div class="btn-group pull-left">	
+					<button class="btn dropdown-toggle" data-toggle="dropdown">By Genre</button>
+					<button class="btn dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+					</button>	
+					<ul class="dropdown-menu">
+						<li><a href="#">Album</a></li>
+						<li><a href="#">Artist</a></li>
+						<li><a href="#">Track</a></li>
+					</ul>
+				</div>
+				<div class="btn-group dropup pull-right">
+				
+					<button class="btn dropdown-toggle" data-toggle="dropdown">
+						<span class="caret" onClick=""></span>
+					</button>
+				</div>
+
+			</div>
+
+			<div class="albumsSortingHeader">
+				<div class="playHeading pull-left">Play</div>
+				<div class="AlbumHeading pull-left">Album</div>
+				<div class="ArtistHeading pull-left">Artist</div>
+				<div class="TrackHeading pull-left">Track</div>
+			</div>
+
+			<div class="albumContainer">
+				<ul>
+					<li>
+						<a href="#"><img src="img/play.png" alt="playButton"></a>
+						<span class="elementNumber">1</span>
+						<img src="img/a1.jpg" alt="AlbumTitle">
+						<div class="albumTitle">Good Girl Gone Bad</div>
+						<div class="artist">Rhiana</div>
+						<button class="btn sleekBlue">View</button>
+					</li>
+					
+					<li>
+						<a href="#"><img src="img/play.png" alt="playButton"></a>
+						<span class="elementNumber">1</span>
+						<img src="img/a1.jpg" alt="AlbumTitle">
+						<div class="albumTitle">Good Girl Gone Bad</div>
+						<div class="artist">Rhiana</div>
+						<button class="btn sleekBlue">View</button>
+					</li>
+
+					<li>
+						<a href="#"><img src="img/play.png" alt="playButton"></a>
+						<span class="elementNumber">1</span>
+						<img src="img/a1.jpg" alt="AlbumTitle">
+						<div class="albumTitle">Good Girl Gone Bad</div>
+						<div class="artist">Rhiana</div>
+						<button class="btn sleekBlue">View</button>
+					</li>
+
+				</ul>
+			</div>
+
+			<div class="albumNavFooter">
+				<button class="btn sleekGrey">|<</button>
+				<button class="btn sleekGrey">< Prev</button>
+
+				<div class="btn-group">
+					<button class="btn">1</button>
+					<button class="btn">2</button>
+					<button class="btn">3</button>
+					<button class="btn">4</button>
+					<button class="btn">5</button>
+				</div>
+
+				<button class="btn sleekGrey">Next ></button>
+				<button class="btn sleekGrey">>|</button>
+			</div>
 
 		</div><!-- end topAlbumsContainer-->
 		
+<!--test code -->
 
-			<form  class="searchMod">
-				<input type="text" id="globalSearch" placeholder="What are you looking for?" size="27" class="searchInput pull-left">
-						<span class="help-block">
-							<label for="localSearch">Here</label>
-							<input type="radio" name="web" value="localSearch">
-							<label for="webSearch">The Web </label>
-							<input type="radio" name="web" value="webSearch">
-						</span>
-						<button type="submit" class="searchButton btn">Find it</button>
-				</fieldset>
-			</form>
+
+
+		
 
 	<style>
-
-		.searchMod {
-			margin: 30px 40px 0  0;	
-		}
-
-		.searchInput {
-			-webkit-border-top-left-radius: 10px;
-			-webkit-border-bottom-left-radius: 10px;
-			-moz-border-radius-topleft: 10px;
-			-moz-border-radius-bottomleft: 10px;
-			border-top-left-radius: 10px;
-			border-bottom-left-radius: 10px;
-		}
-
-		.searchButton {
-			-webkit-border-top-right-radius: 10px;
-			-webkit-border-bottom-right-radius: 10px;
-			-moz-border-radius-topright: 10px;
-			-moz-border-radius-bottomright: 10px;
-			border-top-right-radius: 10px;
-			border-bottom-right-radius: 10px;
-		}
 
 
 
@@ -63,6 +129,8 @@
 		.width580 {
 			width: 580px;
 		}
+
+
 	</style>
 		
 	<script>

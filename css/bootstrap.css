@@ -2247,7 +2247,7 @@ textarea.input-lg {
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -3756,7 +3756,7 @@ input[type="button"].btn-block {
 }
 
 .btn-group > .btn + .dropdown-toggle {
-  padding-right: 8px;
+  padding-right: 10px;
   padding-left: 8px;
 }
 
